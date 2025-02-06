@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ค่าใช้จ่าย</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>ค่าใช้จ่าย</h2>
+        <form id="expenseForm">
+            <input type="text" id="title" placeholder="รายการ" required>
+            <input type="number" id="amount" placeholder="จำนวนเงิน" required>
+            <select id="category" required>
+                <option value="food">อาหาร</option>
+                <option value="transport">เดินทาง</option>
+                <option value="shopping">ช็อปปิ้ง</option>
+            </select>
+            <input type="date" id="date" required>
+            <button type="submit">เพิ่ม</button>
+        </form>
+        <h3>รายการค่าใช้จ่าย</h3>
+        <ul id="expenseList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
