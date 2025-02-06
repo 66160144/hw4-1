@@ -8,19 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <h2>ค่าใช้จ่าย</h2>
+        <h2><center>ค่าใช้จ่าย</center></h2>
         <form id="expenseForm">
             <input type="text" id="title" placeholder="รายการ" required>
             <input type="number" id="amount" placeholder="จำนวนเงิน" required>
             <select id="category" required>
                 <option value="food">อาหาร</option>
                 <option value="transport">เดินทาง</option>
-                <option value="shopping">ช็อปปิ้ง</option>
+                <option value="shopping">ของใช้ในชีวิตประจำวัน</option>
+                <option value="shopping">ของที่อยากได้</option>
+                <option value="shopping">ค่าโทรศัพท์</option>
             </select>
             <input type="date" id="date" required>
             <button type="submit">เพิ่ม</button>
         </form>
-        <h3>รายการค่าใช้จ่าย</h3>
+        <h3><center>ค่าใช้จ่าย</center></h3>
         <ul id="expenseList"></ul>
     </div>
     <script src="script.js"></script>
