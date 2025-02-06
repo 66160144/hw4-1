@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /*ตั้งค่าสีพื้นหลังของหน้าเว็บเป็น สีขาว**/
+    padding: 20px;/*เพิ่มระยะห่างรอบขอบของหน้าเว็บ*/
+}
+.container {
+    max-width: 400px;/*จำกัดความกว้างของกล่องไว้ที่ 400px*/
+    margin: auto;/*ทำให้ กล่องอยู่ตรงกลางของหน้า*/
+    background: rgb(125, 228, 247); /*ตั้งค่าสีพื้นหลังเป็น สีฟ้าอ่อน*/
+    padding: 30px; /* เพิ่มระยะห่างขอบในของกล่อง 30px*/
+    border-radius: 8px; /* ทำให้ขอบของกล่อง โค้งมน 8px*/
+    box-shadow: 0 0 15px rgba(168, 17, 17, 0.1); /*เพิ่มเงารอบกล่องให้ดู นูนขึ้นเล็กน้อย*/
+}
+input, select, button {
+    width: 100%; /*ทำให้ input, select และ button กว้างเต็มกล่อง*/
+    margin-top: 10px; /*เพิ่มระยะห่างด้านบน*/
+    padding: 10px;/*กำหนด ระยะห่างของเนื้อหากับขอบใน*/
+    border: 1px solid #9bcfee; /*border: 1px solid #9bcfee; → กำหนดขอบของฟอร์มเป็น เส้นบางสีฟ้า*/
+    border-radius: 4px; /* ทำให้ขอบของช่องใส่ข้อมูลดู โค้งมน*/
+    box-sizing: border-box; /* ทำให้ padding และ border นับรวมอยู่ในขนาดของ element ทำให้ทุกกรอบเท่ากัน*/
+}
+
+button {
+    background: red; /* กำหนดสีพื้นหลังของปุ่มเป็น สีแดง*/
+    color: rgb(255, 255, 255);/*กำหนดสีตัวอักษรเป็น สีขาว*/
+    cursor: pointer;/*เปลี่ยนเมาส์เป็น รูปมือ เมื่อเลื่อนมาอยู่บนปุ่ม*/
+}
+button:hover {
+    background: rgb(0, 139, 30); /*เมื่อเลื่อนเมาส์ไปวางบนปุ่ม สีจะเปลี่ยนจาก แดง → เขียวเข้ม*/
+}
+.edit-btn, .delete-btn {
+    margin-left: 10px;/*กำหนดระยะห่างจากข้อความหลัก 10px*/
+    cursor: pointer;/*ทำให้เมาส์เปลี่ยนเป็นรูป มือ*/
+    color: blue;/* กำหนดสีข้อความเป็น น้ำเงิน (ปุ่มแก้ไข)*/
+}
+.edit-btn:hover {
+    text-decoration: underline;/*เพิ่มเส้นใต้ข้อความเมื่อเมาส์วางบนปุ่ม แก้ไข*/
+}
+.delete-btn {
+    color: red; /*กำหนดสีข้อความเป็น สีแดง (ปุ่มลบ)*/
+}
+.delete-btn:hover {
+    text-decoration: underline;/*เพิ่มเส้นใต้ข้อความเมื่อเมาส์วางบนปุ่ม ลบ*/
+}
