@@ -75,6 +75,6 @@ button:active {
 }
 
 .delete-btn:hover {
-    color: #a71d2a; /*แดงเข้มเมื่อโฮเวอร์*/
+    color: #a71d2a; 
     text-decoration: underline;
 }
